@@ -1,4 +1,5 @@
 @import "normalize.styl"
+@import "fonts.styl"
 
 gris_oscuro = #333333
 gris_claro = #818181
@@ -13,6 +14,10 @@ body
 figure
 	margin 0
 
+.actions
+	position absolute
+	bottom 0
+
 .author
 	color gris_claro
 
@@ -20,10 +25,17 @@ figure
 	border-bottom 1px solid gris_claro
 
 .button-menu
+	color gris_oscuro
 	left 0.5em
 	margin-top -10px
 	position absolute
 	top 50%
+
+.center-block
+	margin 0 auto
+
+.center-text
+	text-align center
 
 .container
 	font-size 0
@@ -44,6 +56,10 @@ figure
 
 .name
 	color gris_oscuro
+
+.playing
+	&.small
+		width 20em
 
 .relative
 	position relative
